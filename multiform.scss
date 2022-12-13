@@ -536,7 +536,7 @@ body {
 @media screen and(max-width:860px) {
     #container {
         background-color: $Magnolia;
-        height: 700px;
+        height: 680px;
         width: 100vw;
         border-radius: 0;
         flex-direction: column;
@@ -547,6 +547,8 @@ body {
             background-size: cover;
             background-repeat: no-repeat;
             margin: 0;
+            height: 100%;
+            background-color: red;
             width: 100vw;
             border-radius: 0;
             @include flex;
@@ -568,7 +570,7 @@ body {
             flex: 65%;
             border-radius: 5px;
             width: 90%;
-            margin-top: -70px;
+            margin-top: -50px;
             padding-left: 4%;
             @include flex;
             margin-bottom: 50px;
