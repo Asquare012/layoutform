@@ -32,7 +32,7 @@ body {
   background: url(bg-sidebar-desktop.svg);
   background-size: contain;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 550px;
   margin: 0 -5% 0 2%;
   border-radius: 10px;
   display: flex;
@@ -291,6 +291,7 @@ body {
   font-size: 12px;
 }
 #container #pick .foot {
+  padding-top: 70px;
   height: 15%;
   width: 80%;
   display: flex;
@@ -301,7 +302,7 @@ body {
   color: #9699ab;
   font-weight: bold;
   cursor: pointer;
-  margin-right: 66%;
+  margin-right: 65%;
   transition: color 0.1s ease-in-out;
 }
 #container #pick .foot .back:hover {
@@ -433,10 +434,12 @@ body {
 @media screen and (max-width: 860px) {
   #container {
     background-color: #f0f6ff;
-    height: 680px;
+    height: 730px;
+    min-height: 400px;
     width: 100vw;
     border-radius: 0;
     flex-direction: column;
+    overflow-x: hidden;
   }
   #container #left {
     background: url(bg-sidebar-mobile.svg);
@@ -444,7 +447,6 @@ body {
     background-repeat: no-repeat;
     margin: 0;
     height: 100%;
-    background-color: red;
     width: 100vw;
     border-radius: 0;
     display: flex;
