@@ -52,7 +52,7 @@ body {
         background: url(bg-sidebar-desktop.svg);
         background-size: contain;
         background-repeat: no-repeat;
-        height: 500px;
+        height: 550px;
         margin: 0 -5% 0 2%;
         border-radius: 10px;
         display: flex;
@@ -359,6 +359,7 @@ body {
         }
 
         .foot {
+            padding-top: 70px;
             height: 15%;
             width: 80%;
             @include flex;
@@ -367,7 +368,7 @@ body {
                 color: $Cool-gray;
                 font-weight: bold;
                 cursor: pointer;
-                margin-right: 66%;
+                margin-right: 65%;
                 transition: color 0.1s ease-in-out;
             }
 
@@ -536,10 +537,12 @@ body {
 @media screen and(max-width:860px) {
     #container {
         background-color: $Magnolia;
-        height: 680px;
+        height: 730px;
+        min-height: 400px;
         width: 100vw;
         border-radius: 0;
         flex-direction: column;
+        overflow-x: hidden;
 
         // left
         #left {
@@ -548,7 +551,6 @@ body {
             background-repeat: no-repeat;
             margin: 0;
             height: 100%;
-            background-color: red;
             width: 100vw;
             border-radius: 0;
             @include flex;
